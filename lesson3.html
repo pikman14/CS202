@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- container or container-fluid -->
+   <div class="container-fluid">
+    <h1>Forms</h1>
+    <form action="welcome.html" method="POST" autocomplete="" onsubmit="">
+
+      <label for="name">Name</label><br>
+      <input type="text" name="name" id="n1" size="50" required><br>
+
+      <label for="password">Password</label><br>
+      <input type="password" name="password" id="" placeholder="Enter your password..."><br>
+
+      <label for="phone">Phone Number</label><br>
+      <input type="text" name="phone"><br>
+
+      <label for="date">DOB</label><br>
+      <input type="date" name="date" id="dat"><br>
+
+      <label for="gender">Gender</label><br>
+      Male: <input type="radio" name="gender" id=""><br>
+      Female: <input type="radio" name="gender" id=""><br><br>
+
+      <label for="image">Upload an image</label><br>
+      <input type="file" name="image" id=""><br><br>
+
+      <label for="city">Select your city</label>
+      <select>
+        <option value="city">Bellingham</option>
+        <option value="city">Bothell</option>
+        <option value="city">Seattle</option>
+      </select><br><br>
+
+      <label for="message">Message</label><br>
+      <textarea name="" id="" cols="20" rows="5"></textarea><br>
+
+      <br><br>
+      <input class="btn btn-warning" type="submit" value="Send"> <!-- bootstrap-->
+
+    </form>
+   </div>
+
+
+<hr>
+<h3>Audio</h3>
+<audio controls>
+  <source src="../media/ckth.mp3" type="audio/mp3">
+</audio>
+
+<hr>
+<h3>Video</h3>
+<video controls loop muted>
+    <source src="../media/video.mp4" type="video/mp4">
+</video>
+
+
+
+<div style="margin-top:400px"></div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
