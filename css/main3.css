@@ -1,0 +1,27 @@
+*
+{
+    box-sizing: border-box;
+}
+
+.cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* .box
+{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 255, 0, 0.9);
+    opacity: .9;
+    box-shadow: 10px 8px 5px rgba;
+} */
+
+.cards img
+{
+    max-width: 20vw;
+    margin: 10px; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.34), 0 2px 4px rgba(0, 0, 0, 0.2);
+}

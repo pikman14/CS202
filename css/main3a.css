@@ -1,0 +1,40 @@
+*
+{
+    box-sizing: border-box;
+}
+
+.cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.card
+{
+    flex: 0 0 250px;
+    /* flex: flex-grow, flex-shrink, flex-basis */
+}
+
+.card img
+{
+    max-width: 100%;
+}
+
+.card .test
+{
+    text-align: center;
+    padding: 0 20px 20px;
+}
+
+.button
+{
+    width: 100%;
+    display: block;
+    background: #05a081;
+    padding: 10px;
+    color: white;
+    border-radius: 30px;
+}
+
+modal
