@@ -5,44 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
-    <div class="">
-        <h1>Hello, world!</h1>
+    <div class="container">
+        <h1 class="display-4">Hello, world!</h1>
         <!-- Typograph-->
         <!-- Paragraphs tags-->
-        <p>
+        <p class="lead">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
         </p>
         <p>
-        Lorem ipsum <mark>dolorsit amet,</mark>consectetur adipiscing <del>Lorem ipsum dolor sit.</del> elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. <u>Ut enim ad minim</u> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        Lorem ipsum <mark>dolorsit amet,</mark>consectetur adipiscing <del>Lorem ipsum dolor sit.</del> elit, sed do eiusmod tempor incididunt utlabore <strong>et dolore magna</strong> aliqua. <u>Ut enim ad minim</u> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
         </p>
-          <p>Left aligned text</p>
-          <p>Right aligned text</p>
-          <p>Center aligned text</p>
-          <p>Justigied text</p>
-          <p>No Wrap text</p>
+          <p class="text-left">Left aligned text</p>
+          <p class="text-right">Right aligned text</p>
+          <p class="text-center">Center aligned text</p>
+          <p class="text-justify">Justigied text</p>
+          <!-- MEAN STACK - MANGODB, EXPRESS, ANUGALAR6, NODEJS -->
+          <p class="text-nowrap">No Wrap text</p>
   
         <hr>
         <!-- Quick Float -->
-          <div>Div floated to right</div>
-          <div>Div floated to left</div>
+          <div class="float-left">Div floated to right</div>
+          <div class="float-right">Div floated to left</div>
   
         <!-- clear Float -->
   
-        <div></div>
+        <div class="clearfix"></div>
         <hr>
   
         <!-- blockquotes -->
-        <blockquote>
+        <blockquote class="blockquote">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
         </blockquote>
   
         <!-- LIST -->
         <!-- unstyled -->
-        <ul>
+        <ul class="list-unstyled">
           <li>Item One</li>
           <li>Item Two</li>
           <li>Item Three</li>
@@ -50,20 +51,20 @@
         </ul>
   
         <!-- Inline -->
-        <ul>
-          <li>Item One</li>
-          <li>Item Two</li>
-          <li>Item Three</li>
-          <li>Item Four</li>
+        <ul class="list-inline">
+          <li class="list-inline-item">Item One</li>
+          <li class="list-inline-item">Item Two</li>
+          <li class="list-inline-item">Item Three</li>
+          <li class="list-inline-item">Item Four</li>
         </ul>
   
         <!-- Definition List-->
-        <dlS>
-          <dt>CSCI 202</dt>
-          <dd>Dynamic Webpages, HTML, CSS, PHP</dd>
+        <dl class="row">
+          <dt class="col-4">CSCI 202</dt>
+          <dd class="col-8">Dynamic Webpages, HTML, CSS, PHP</dd>
   
-          <dt>CSCI 102</dt>
-          <dd>
+          <dt class="col-6">CSCI 102</dt>
+          <dd class="col-6">
             <p>Computer Mediated Communications</p>
             <p>HTML, CSS, JavaScript.</p>
           </dd>
@@ -72,18 +73,18 @@
         <hr>
   
         <!-- Contextual Colors-->
-          <p>Hello World</p>
-          <p>Hello World</p>
-          <p>Hello World</p>
-          <p>Hello World</p>
-          <p>Hello World</p>
-          <p>Hello World</p>
+          <p class="text-primary">Hello World</p>
+          <p class="text-success">Hello World</p>
+          <p class="text-info">Hello World</p>
+          <p class="text-warning">Hello World</p>
+          <p class="text-muted">Hello World</p>
+          <p class="text-secondary">Hello World</p>
       
   
         <hr>
   
         <!-- Contextual Background Colors-->
-          <p>Hello World</p>
+          <p class="bg-primary">Hello World</p>
           <p>Hello World</p>
           <p>Hello World</p>
           <p>Hello World</p>
@@ -93,11 +94,11 @@
       </div><!-- End of first Div-->
   
       <hr>
-      <div>
+      <div class="container">
       
       <!-- Contextual Button-->
-          <button>Default</button>
-          <button>Primary</button>
+          <button class="btn btn-default">Default</button>
+          <button class="btn btn-primary">Primary</button>
           <button>Success</button>
           <button>Info</button>
           <button>Warning</button>
@@ -105,8 +106,9 @@
             <hr>
   
         <!-- Button Sizes -->
+        <!-- xs, md, lg,  -->
           <button>Default</button>
-          <button>Large</button>
+          <button class="btn btn-primary btn-lg">Large</button>
           <button>Default</button>
           <button>Xtra Small</button>
       <hr>
@@ -114,14 +116,14 @@
         <div>
             <!-- Forms -->
             <form>
-                <div>
+                <div class="form-group">
                 <label>Name</label>
-                <input type="text" name="" placeholder="Enter Your Name">
+                <input type="text" name="" placeholder="Enter Your Name" class="form-control">
                 </div>
     
-                <div>
+                <div class="form-group">
                 <label>Email</label>
-                <input type="email" name="" placeholder="Enter Your Email">
+                <input type="email" name="" placeholder="Enter Your Email" class="form-control">
                 </div>
     
                 <div>
@@ -147,15 +149,15 @@
                 </label>
                 </div>
     
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="submit" class="btn btn-default btn-primary">Submit</button>
             </form>
         </div>
         </div>
         <hr>
   
         <!-- Table-->
-        <div>
-            <table>
+        <div class="container">
+            <table class="table-bordered">
                 <tr>
                 <th>Firstname</th>
                 <th>Lastname</th> 
@@ -191,13 +193,14 @@
     
         <hr>
     <!-- card -->
-      <div>
+      <div class="container">
         <!-- card-->
-          <div>
-            <div>
-              <h3>Card title</h3>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-              <a href="#">Read More</a>
+          <div class="card">
+            <img src="images/lesson11.jpg" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
             </div>          
           </div>
       </div>
@@ -226,9 +229,9 @@
     <div class="clearfix"></div>
       <hr>
       <!-- Grid -->
-      <div>
-          <div>
-            <div>
+      <div class="container">
+          <div class="row">
+            <div class="col-md-">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
               </p>
             </div>
